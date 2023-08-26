@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tours</title>
+    <link rel="shortcut icon" href="../img/H.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="bg-[url(https://cdn.hillsong.com/wp-content/uploads/sites/40/2022/09/29021014/AWTY_Archive-Tour-Gallery-13.jpg)] bg-cover static">
+
+    <header class="flex">
+
+        <div class="bg-neutral-900 flex-none h-screen text-center p-6">
+
+            <div class="mb-5 flex">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzUREjjJSeA6GSqii5yNEKgX-kXPTrCc8XKRyp9RVNgJT7AO8GojI435xYtcVkfQmlah4&usqp=CAU"
+                    alt="willd" class="w-10 rounded-full m-1">
+                <span class="text-orange-300 truncate m-2 text-orange-200 font-bold flex">
+                    <p>Welcome</p>
+                </span>
+            </div>
+
+            <div class="mt-5 mb-5">
+                <a class="text-orange-300 font-bold  truncate hover:text-orange-200" href="./home.html">Home</a>
+            </div>
+
+            <div class="mb-5">
+                <a class="text-orange-300 truncate hover:text-orange-200 font-bold" href="./addAlbum.html">Add
+                    Albums</a>
+            </div>
+            <div class="mb-5">
+                <a class="text-orange-300 truncate hover:text-orange-200 font-bold" href="./addSongs.html">Add Songs</a>
+            </div>
+            <div class="mb-5">
+                <a class="text-orange-300 truncate hover:text-orange-200 font-bold" href="./editAlbum.html  ">Edit
+                    Album</a>
+            </div>
+            <div class="mb-5">
+                <a class="text-orange-300 truncate hover:text-orange-200 font-bold" href="../pages/login.html">Log
+                    out</a>
+            </div>
+        </div>
+
+        <main class="flex flex-1">
+            <div class="flex-1 w-24">
+                <div>
+                    <h1 class="text-8xl text-orange-200 font-bold text-center my-5 p-2"> THE PEOPLE TOUR </h1>
+                </div>
+                <div class="w-7/12 mx-auto p-4 rounded-xl ">
+                    <p class="font-bold text-orange-200 text-xl text-center">MAY 28 BIG CHURCH FESTIVAL, UK<br>
+                        <button id="buy_uk" onclick="getTickets(`uk`)"
+                            class="bg-black text-white p-2 px-20 text-white border-2 rounded-full mb-2 hover:bg-zinc-900">TICKETS</button>
+                    </p>
+                </div>
+                <div class="w-7/12 mx-auto p-4 rounded-xl ">
+                    <p class="font-bold text-orange-200 text-xl text-center">MAY 30 DÜSSELDORF, GERMANY<br>
+                        <button id="buy_germany" onclick="getTickets(`germany`)"
+                            class="bg-black text-white p-2 px-20 text-white border-2 rounded-full mb-2 hover:bg-zinc-900">TICKETS</button>
+                    </p>
+                </div>
+                <div class="w-7/12 mx-auto p-4 rounded-xl ">
+                    <p class="font-bold text-orange-200 text-xl text-center">JUNE 1 ROTTERDAM, NETHERLANDS <br>
+                        <button id="buy_netherlands" onclick="getTickets(`netherlands`)"
+                            class="bg-black text-white p-2 px-20 text-white border-2 rounded-full mb-2 hover:bg-zinc-900">TICKETS</button>
+                    </p>
+                </div>
+                <div class="w-7/12 mx-auto p-4 rounded-xl ">
+                    <p class="font-bold text-orange-200 text-xl text-center">JUNE 3 PULA, CROATIA<br>
+                        <button id="buy_croatia" onclick="getTickets (`croatia`)"
+                            class="bg-black text-white p-2 px-20 text-white border-2 rounded-full mb-2 hover:bg-zinc-900">TICKETS</button>
+                    </p>
+                </div>
+            </div>
+
+            <!-- <div class="flex-1 w-24">
+                <div class="w-7/12 mx-auto p-4 rounded-xl ">
+                    <p class="font-bold text-orange-200 text-xl">JUNE 5
+                        ZURICH, SWITZERLAND<br>
+                        <button onclick="getTickets(`ZURICH, SWITZERLAND`)"
+                            class="bg-black text-white p-2 px-20 text-white border-2 rounded-full mb-2 hover:bg-zinc-900">TICKETS</button>
+                    </p>
+                </div>
+                <div class="w-7/12 mx-auto p-4 rounded-xl ">
+                    <p class="font-bold text-orange-200 text-xl">JUNE 7
+                        STUTTGART, GERMANY<br>
+                        <button onclick="getTickets(`STUTTGART, GERMANY`)"
+                            class="bg-black text-white p-2 px-20 text-white border-2 rounded-full mb-2 hover:bg-zinc-900">TICKETS</button>
+                    </p>
+                </div>
+                <div class="w-7/12 mx-auto p-4 rounded-xl ">
+                    <p class="font-bold text-orange-200 text-xl">JUNE 8
+                        LEIPZIG, GERMANY<br>
+                        <button onclick="getTickets(`LEIPZIG, GERMANY`)"
+                            class="bg-black text-white p-2 px-20 text-white border-2 rounded-full mb-2 hover:bg-zinc-900">TICKETS</button>
+                    </p>
+                </div>
+                <div class="w-7/12 mx-auto p-4 rounded-xl ">
+                    <p class="font-bold text-orange-200 text-xl">JUNE 9
+                        GLIWICE, POLAND<br>
+                        <button onclick="getTickets (`GLIWICE, POLAND`)"
+                            class="bg-black text-white p-2 px-20 text-white border-2 rounded-full mb-2 hover:bg-zinc-900">TICKETS</button>
+                    </p>
+                </div>
+            </div> -->
+        </main>
+    </header>
+
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="../script/tours.js"></script>
+</body>
+
+</html>

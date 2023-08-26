@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Albums</title>
+    <link rel="shortcut icon" href="../img/H.ico" type="image/x-icon">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body
+    class="bg-[url(https://old.livenet.ch//sites/default/files/media/305225-Hillsong-Israel.JPG)] bg-fixed bg-cover bg-top-right opacity-75">
+
+    <header class="flex">
+        <div class="bg-neutral-900 h-screen text-center p-6">
+
+            <div class="mb-5 flex">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzUREjjJSeA6GSqii5yNEKgX-kXPTrCc8XKRyp9RVNgJT7AO8GojI435xYtcVkfQmlah4&usqp=CAU" alt="willd" class="w-10 rounded-full m-1">
+                <p class="text-orange-300 truncate m-2 text-orange-200 font-bold flex">Leo Messi</p>
+            </div>
+
+            <div class="mt-5 mb-5">
+                <a class="text-orange-300 font-bold truncate hover:text-orange-200"
+                    href="./home.html">Other Albums</a>
+            </div>
+
+            <div class="mb-5">
+                <a class="text-orange-300 truncate hover:text-orange-200 font-bold" href="./editAlbum.html">Edit Album</a>
+            </div>
+            <div class="mb-5">
+                <a class="text-orange-300 truncate hover:text-orange-200 font-bold" href="./addSongs.html">Add Songs</a>
+            </div>
+            <div class="mb-5">
+                <a class="text-orange-300 truncate hover:text-orange-200 font-bold" href="./login.html">Log Out</a>
+            </div>
+        </div>
+
+        <div class="text-center flex-auto w-64">
+            <form action="">
+                <div class="mb-5">
+                    <h1 class="text-3xl font-bold mb-10 mt-5 text-gray-900 ">Add Albums</h1>
+                </div>
+
+                <div class="mb-5">
+                    <label class="block text-gray-900 font-bold mb-2" for="title">Title:</label>
+                    <input class="p-1 w-6/12 rounded-lg border focus:outline-none" type="text" name="title" required>
+                </div>
+
+                <div class="mb-5">
+                    <label class="block text-gray-900 font-bold mb-2" for="released">Released:</label>
+                    <input class="p-1 w-6/12 rounded-lg border focus:outline-none" type="date">
+                </div>
+
+                <div class="mb-5">
+                    <label class="block text-gray-900 font-bold mb-2" for="description">Description:</label>
+                    <input class="p-1 w-6/12 rounded-lg border focus:outline-none h-20" type="text" name="description"
+                        required>
+                </div>
+
+                <div class="mb-8">
+                    <label class="block text-gray-900 font-bold mb-2" for="image">Img:</label>
+                    <input class="p-1 w-6/12 rounded-lg border focus:outline-none" type="url" name="image"
+                        placeholder="Insert url">
+                </div>
+
+                <div>
+                    <button
+                        class="w-1/4 bg-neutral-900 text-orange-300 rounded-lg hover:text-orange-200 hover:bg-neutral-800 p-2 font-bold">Add
+                        Album</button>
+                </div>
+            </form>
+        </div>
+    </header>
+
+</body>
+
+</html>

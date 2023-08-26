@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="shortcut icon" href="../img/H.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-neutral-900">
+    <div class="ml-10 mt-5 bg-neutral-900">
+        <a class="text-orange-300 font-bold text-2xl mt-5 hover:text-orange-200" href="../index.html">Hillsong United</a>
+    </div>
+
+    <div
+        class="bg-[url(https://64.media.tumblr.com/e67d7cb9241e4dd742e49bd012ae3d01/tumblr_n7nvg0EyBe1rwt3lyo1_640.gif)] flex items-start justify-center h-screen bg-cover bg-center">
+
+        <div class="bg-white p-8 rounded-xl shadow-xl max-w-sm w-full mt-7">
+            <h3 class="text-2xl text-center font-semibold mb-4">Register</h3>
+            <form>
+                <div class="mb-1">
+                    <label class="block text-lime-900 text-sm font-bold mb-2" for="Name">Name:</label>
+                    <input
+                        class="w-full px-3 py-2 border rounded-lg focus:ring focus:border-blue-100 focus:outline-none"
+                        type="text" name="name" placeholder="Name" id="name" required>
+                </div>
+
+                <div class="mb-1">
+                    <label class="block text-lime-900 text-sm font-bold mb-2" for="lastName">last Name:</label>
+                    <input
+                        class="w-full px-3 py-2 border rounded-lg focus:ring focus:border-blue-100 focus:outline-none"
+                        type="text" name="last name" id="lasName" placeholder="last name" required>
+                </div>
+
+                <div class="mb-1">
+                    <label class="block text-lime-900 text-sm font-bold mb-2" for="email">Email:</label>
+                    <input
+                        class="w-full px-3 py-2 border rounded-lg focus:ring focus:border-blue-100 focus:outline-none"
+                        type="email" placeholder="Email" id="email" required>
+                </div>
+
+                <div class="mb-1">
+                    <label class="block text-lime-900 text-sm font-bold mb-2" for="userName">User name:</label>
+                    <input
+                        class="w-full px-3 py-2 border rounded-lg focus:ring focus:border-blue-100 focus:outline-none"
+                        type="text" name="userName" placeholder="User name" id="userName" required>
+                </div>
+
+                <div class="mb-2">
+                    <label class="block text-lime-900 text-sm font-bold mb-2" for="password">Password:</label>
+                    <input
+                        class="w-full px-3 py-2 border rounded-lg focus:ring focus:border-blue-100 focus:outline-none"
+                        type="password" placeholder="Password" id="password" required>
+                </div>
+
+                <div class="mb-1 text-center">
+                    <button class="bg-lime-900 text-white py-1 px-20 rounded-lg hover:bg-neutral-600 transition w-full"
+                        type="submit">Submit</button>
+                </div>
+
+                <div class="mb-1 text-center">
+                    <a class="text-center font-bold text-lime-900 hover:text-neutral-600" href="./login.html">Log in</a>
+                </div>
+        </div>
+        </form>
+</body>
+
+</html>
