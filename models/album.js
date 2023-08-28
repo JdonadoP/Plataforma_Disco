@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { number } = require("xpress/lib/string");
 
 const albumModel = new mongoose.Schema({
     title: {

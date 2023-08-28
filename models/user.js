@@ -14,7 +14,7 @@ const userModel = new mongoose.Schema({
             message: "You must enter a valid email!"
         }
     },
-    password: {type: password},
+    password: {type: String},
     favorites: {type: String}
 })
 
