@@ -20,7 +20,7 @@ const albumModel = new mongoose.Schema({
         title: {type: String}   ,
         duration: {type: Number}
     },
-    cover: {type: URL}
+    cover: {type: String}
 
 });
 
